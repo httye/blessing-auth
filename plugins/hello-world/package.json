@@ -1,0 +1,8 @@
+{
+    "name": "hello-world",
+    "title": "Hello World 示例插件",
+    "description": "演示插件系统全部扩展点：事件、过滤器、路由、菜单、视图、head 注入。",
+    "version": "1.0.0",
+    "author": "Blessing Auth",
+    "require": []
+}

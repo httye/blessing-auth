@@ -1,0 +1,8 @@
+{
+    "name": "authme-sync",
+    "title": "AuthMe 同步",
+    "description": "将角色名与网站密码哈希同步到 AuthMeReloaded 数据表，玩家在游戏内用网站密码 /login。适用于离线模式 + AuthMe 的服务器。",
+    "version": "1.0.0",
+    "author": "Blessing Auth",
+    "require": []
+}
