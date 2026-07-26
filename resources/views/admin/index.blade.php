@@ -33,6 +33,7 @@
     @if(auth()->user()->isSuperAdmin())
         <a href="{{ route('admin.backups') }}" role="button" class="outline">备份管理</a>
         <a href="{{ route('admin.oauth-clients') }}" role="button" class="outline">接入应用</a>
+        <a href="{{ route('admin.audit') }}" role="button" class="outline">审计日志</a>
     @endif
 </article>
 @endsection

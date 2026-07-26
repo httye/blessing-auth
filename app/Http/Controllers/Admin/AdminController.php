@@ -351,8 +351,6 @@ class AdminController extends Controller
 
         $client->update(['enabled' => ! $client->enabled]);
 
-        Auth::forgetInstance();
-
         return back()->with('success', $client->enabled ? '应用已启用。' : '应用已停用（其令牌立即失效）。');
     }
 
