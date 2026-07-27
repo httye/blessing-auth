@@ -22,7 +22,7 @@ class Option extends Model
 
     public static function get(string $key, mixed $default = null): mixed
     {
-        static::load();
+        static::loadCache();
 
         return static::$cache[$key] ?? $default;
     }
@@ -34,11 +34,12 @@ class Option extends Model
             ['value' => (string) $value],
         );
 
-        static::load();
+        static::loadCache();
         static::$cache[$key] = (string) $value;
     }
 
-    protected static function load(): void
+    /** 请求级缓存，避免每次读取都查库。注意：方法名不能取 load()，会与 Eloquent Model::load() 冲突。 */
+    protected static function loadCache(): void
     {
         if (static::$cache !== null) {
             return;
