@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.2",
         "guzzlehttp/guzzle": "^7.8",
-        "laravel/framework": "^11.0",
+        "laravel/framework": "^12.0",
         "league/commonmark": "^2.4",
         "league/flysystem-aws-s3-v3": "^3.0",
         "league/flysystem-webdav": "^3.0"
